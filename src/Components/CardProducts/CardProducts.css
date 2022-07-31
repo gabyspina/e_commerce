@@ -1,0 +1,13 @@
+
+.card{
+    margin-top: 10px;
+}
+
+.card-media{
+    border: solid 1px black;
+}
+
+.card-content{
+    border: solid black 1px;
+    padding: auto;
+}
