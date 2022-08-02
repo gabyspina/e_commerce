@@ -30,6 +30,7 @@ const Router = () => {
               <Route path='/galery' element={<Galery/>} />
               <Route path='/cart' element={<Cart/>} />
               <Route path='/checkout' element={< Checkout/>} /> 
+              <Route path='/galery' element={< Galery/>} /> 
               <Route path='/detail/:id' element={< ItemDetailContainer/>} /> 
               {/* <Route path='/category/:category' element={<Category/>} /> */}
               <Route path='*' element={<Error />} />

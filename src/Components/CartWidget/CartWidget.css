@@ -6,6 +6,7 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    background-color: #2074d4;
 }
 .link-icon{
     display: flex;
@@ -15,4 +16,5 @@
     color: black;
     font-weight: bold;
     text-decoration: none;
+    border-color: #2074d4;
 }

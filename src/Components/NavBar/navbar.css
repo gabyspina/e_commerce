@@ -1,19 +1,15 @@
-/* nav{
-    background-color:  rgb(211, 209, 209);
-    padding: 0;
-    margin: 0;
-    border-bottom: 1px solid white;
-}
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.box-link{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center ;
-} */
-.li-menu{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-color: #2074d4;
+}
+
+.li{
     list-style: none;
     text-decoration: none;
     color: white;

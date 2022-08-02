@@ -3,23 +3,15 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
+import { Stack } from '@mui/material';
 
 
-
-const pages = [
-<Link className="li" to='/' underline="none" color="inherit" >Inicio</Link>,
-<Link className="li-menu" to='/food' underline="none" color="inherit">Alimentos</Link>,
-<Link className="li" to='/accesorios' underline="none" color="inherit">Accesorios</Link>,
-
-];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -68,25 +60,36 @@ const NavBar = () => {
                 display: { xs: 'block', md: 'none'  },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"  component="strong">{page}</Typography>
-                </MenuItem>
-              ))}
+              
+                <Stack  direction="column" spacing= "2">
+            
+                      <Link className="li" to='/' style={{ textDecoration: 'none' , color: 'black', fontWeight: 'bold' , marginTop: 10}}>Inicio</Link>
+                      <Link className="li" to='/food' style={{ textDecoration: 'none' , color: 'black', fontWeight: 'bold' , marginTop: 10}}>Alimentos</Link>
+                      <Link className="li" to='/accesorios' style={{textDecoration: 'none', color: 'black', fontWeight: 'bold', marginTop: 10 }}>Accesorios</Link>
+                      <Link className="li" to='/galery' style={{textDecoration: 'none', color: 'black', fontWeight: 'bold', marginTop: 10 }}>Galeria</Link>
+
+                </Stack>
+           
             </Menu>
           </Box>
          
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            
               <Button
-                key={page}
+            
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'in', display: 'block' }}
                 component="strong"
+              
+                spacing="10"
               >
-                {page}
+                      <Link className="li" to='/' style={{ textDecoration: 'none' , color: 'white', fontWeight: 'bold' , marginLeft: 30}}>Inicio</Link>,
+                      <Link className="li" to='/food' style={{ textDecoration: 'none' , color: 'white', fontWeight: 'bold',marginLeft: 30 }}>Alimentos</Link>,
+                      <Link className="li" to='/accesorios' style={{textDecoration: 'none', color: 'white', fontWeight: 'bold', marginLeft: 30 }}>Accesorios</Link>,
+                      <Link className="li" to='/galery' style={{textDecoration: 'none', color: 'white', fontWeight: 'bold', marginLeft: 30 }}>Galeria</Link>,
+
               </Button>
-            ))}
+   
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
