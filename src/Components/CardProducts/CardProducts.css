@@ -11,3 +11,13 @@
     border: solid black 1px;
     padding: auto;
 }
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.link-btn{
+    text-decoration: none;
+    color: black;
+}

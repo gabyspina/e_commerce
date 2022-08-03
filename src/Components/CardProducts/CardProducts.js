@@ -37,11 +37,14 @@ export default function CardProducts({prod} ) {
     e.preventDefault();
   }
   return (
+
     <div className= "card" >
     <Card sx={{ maxWidth: 400 }} onSubmit={onSubmit} >
 
+
       <div className='card-media'>
-      
+
+
       <ImageListItem key={prod.id} className='img-card'
         
       >
@@ -79,6 +82,8 @@ export default function CardProducts({prod} ) {
           <ExpandMoreIcon />
         </ExpandMore>
       </CardActions>
+      
+
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>Descripción</Typography>

@@ -11,7 +11,7 @@ import Accesorios from '../views/Accesorios/Accesorios';
 import Galery from '../views/Galery/Galery';
 import Cart from '../views/Cart/Cart';
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
-// import Category from '../views/Category/Category';
+import Category from '../views/Category/Category';
 import Error from '../views/Error/Error';
 import Checkout from '../views/Checkout/Checkout';
 
@@ -32,7 +32,7 @@ const Router = () => {
               <Route path='/checkout' element={< Checkout/>} /> 
               <Route path='/galery' element={< Galery/>} /> 
               <Route path='/detail/:id' element={< ItemDetailContainer/>} /> 
-              {/* <Route path='/category/:category' element={<Category/>} /> */}
+              <Route path='/category/:category' element={<Category/>} /> 
               <Route path='*' element={<Error />} />
 
 

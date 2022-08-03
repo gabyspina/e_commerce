@@ -74,16 +74,21 @@ export default function CardDetail({item}) {
             <ItemCount stock={5} initial={1} onAdd = {addToCart} />
         </div>
 
-        </Box>
+        </Box  >
         
-
-          <Link to='/cart'>
-              <Button variant="contained" color="success" size="lg"  >
-                Finalizar Compra
-              </Button>
-          </Link>
-
-
+          <div className='botones'  >
+              <Link to='/cart' className='link-btn' >
+                  <Button variant="contained" color="success" size="lg"  >
+                    Finalizar Compra
+                  </Button>
+              </Link>
+              
+              <Link to='/food' className='link-btn'>
+                  <Button variant="contained" color="success" size="lg"  >
+                    Continuar Comprando
+                  </Button>
+              </Link>
+          </div>
       </Box>
     </Card>
   );

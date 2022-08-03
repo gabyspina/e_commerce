@@ -15,7 +15,7 @@
     height: 50%;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
     
 }
@@ -26,7 +26,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    }
+        
+}
 
 .img-acc{
     background-image: url("https://vetplan.es/wp-content/uploads/2020/01/elegir-collar-perro.png");
