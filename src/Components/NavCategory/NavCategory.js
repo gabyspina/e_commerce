@@ -9,6 +9,10 @@ const NavCategory = () => {
       <ul>
         <Link to='/category/perro'>Perro</Link>
         <Link to='/category/gato'>Gatos</Link>
+        <Link to='/category/accesorio'>Accesorios</Link>
+
+
+
       </ul>
 
 

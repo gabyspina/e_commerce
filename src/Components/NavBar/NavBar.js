@@ -64,8 +64,7 @@ const NavBar = () => {
                 <Stack  direction="column" spacing= "2">
             
                       <Link className="li" to='/' style={{ textDecoration: 'none' , color: 'black', fontWeight: 'bold' , marginTop: 10}}>Inicio</Link>
-                      <Link className="li" to='/food' style={{ textDecoration: 'none' , color: 'black', fontWeight: 'bold' , marginTop: 10}}>Alimentos</Link>
-                      <Link className="li" to='/accesorios' style={{textDecoration: 'none', color: 'black', fontWeight: 'bold', marginTop: 10 }}>Accesorios</Link>
+                      <Link className="li" to='/food' style={{ textDecoration: 'none' , color: 'black', fontWeight: 'bold' , marginTop: 10}}>Productos</Link>
                       <Link className="li" to='/galery' style={{textDecoration: 'none', color: 'black', fontWeight: 'bold', marginTop: 10 }}>Galeria</Link>
 
                 </Stack>
@@ -84,8 +83,7 @@ const NavBar = () => {
                 spacing="10"
               >
                       <Link className="li" to='/' style={{ textDecoration: 'none' , color: 'white', fontWeight: 'bold' , marginLeft: 30}}>Inicio</Link>,
-                      <Link className="li" to='/food' style={{ textDecoration: 'none' , color: 'white', fontWeight: 'bold',marginLeft: 30 }}>Alimentos</Link>,
-                      <Link className="li" to='/accesorios' style={{textDecoration: 'none', color: 'white', fontWeight: 'bold', marginLeft: 30 }}>Accesorios</Link>,
+                      <Link className="li" to='/food' style={{ textDecoration: 'none' , color: 'white', fontWeight: 'bold',marginLeft: 30 }}>Productos</Link>,
                       <Link className="li" to='/galery' style={{textDecoration: 'none', color: 'white', fontWeight: 'bold', marginLeft: 30 }}>Galeria</Link>,
 
               </Button>
