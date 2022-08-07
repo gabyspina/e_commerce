@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.21edc478.css",
+    "main.js": "/static/js/main.c94b7319.js",
+    "static/media/logo-pet-modificado.ico": "/static/media/logo-pet-modificado.f186106a7024de34b376.ico",
+    "index.html": "/index.html",
+    "main.21edc478.css.map": "/static/css/main.21edc478.css.map",
+    "main.c94b7319.js.map": "/static/js/main.c94b7319.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21edc478.css",
+    "static/js/main.c94b7319.js"
+  ]
+}
