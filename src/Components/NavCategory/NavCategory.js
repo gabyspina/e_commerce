@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 
 const NavCategory = () => {
   return (
-    <nav>
+    <nav className='nav-category'>
       <ul>
-        <Link to='/category/perro'>Perro</Link>
-        <Link to='/category/gato'>Gatos</Link>
-        <Link to='/category/accesorio'>Accesorios</Link>
+        <Link className='li' to='/category/perro'>Perro</Link>
+        <Link className='li' to='/category/gato'>Gatos</Link>
+        <Link className='li' to='/category/accesorio'>Accesorios</Link>
 
 
 

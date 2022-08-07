@@ -1,8 +1,9 @@
 nav{
-    background-color: #f2f2f2;
+    background-color: #2074d4;
     padding: 0;
     margin: 0;
     border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 ul{
     list-style: none;
@@ -16,6 +17,6 @@ ul{
 .li{
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
