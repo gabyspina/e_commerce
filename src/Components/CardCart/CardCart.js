@@ -5,17 +5,17 @@ import CardContent from '@mui/joy/CardContent';
 import CardOverflow from '@mui/joy/CardOverflow';
 import Typography from '@mui/joy/Typography';
 import Total from '../../Components/Total/Total';
-import Button from '@mui/joy/Button';
+import Button from '@mui/material/Button';
 import { Stack } from '@mui/material';
 
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../Components/CartContext/CartContext';
-
+import DeleteForeverTwoToneIcon from '@mui/icons-material/DeleteForeverTwoTone';
     
 
 const CardCart = () => {
 
-    const { cart } = useCartContext();
+    const { cart, removeItem } = useCartContext();
 
     return (
     <>
@@ -61,24 +61,40 @@ const CardCart = () => {
       >
 
       </CardOverflow>
+
+        <DeleteForeverTwoToneIcon onClick={()=> removeItem(producto.id)}/>
+         
+
     </Card>
     ))}
             <Total  producto = {cart}/>
 
-        <Stack direction= "row" >
+        <Stack direction= "row" spacing={5} >
 
           
-        <Stack spacing={2} direction="column" size="large">
-            <Link to='/food'> 
-              <Button variant="contained" color="success" >Seguir Comprando</Button>
+        <Stack spacing={2} direction="column" size="large"  > 
+            
+        <Button variant="contained" color="success" ><Link to='/food'
+            style={{
+              textDecoration: 'none',
+              color: 'white',
+              fontWeight: 'bold'
+            }}
+            > 
+              Seguir Comprando
             </Link>
+        </Button>
         </Stack>
 
-        
         <Stack spacing={2} direction="column" size="large">
-            <Link to='/checkout'> 
-              <Button variant="contained" color="success" >Finalizar Compra</Button>
-            </Link>
+            
+              <Button variant="contained" color="success"  ><Link style={{
+
+                textDecoration: 'none',
+                color: 'white',
+                fontWeight: 'bold'
+              }} to='/checkout' > Finalizar Compra </Link></Button>
+            
         </Stack>
 
 

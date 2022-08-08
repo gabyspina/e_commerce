@@ -15,8 +15,17 @@ const Total = () => {
 
   return (
     <>
-      <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-        Total de Compra: {accounting.formatMoney(total, '$', 2, '.', ',')}
+      <Typography variant="h6" sx={{ fontWeight: 'bold',
+        textAlign: 'left',
+        mb: 2,
+        mt: 2,
+        width: '20%',
+        color: 'success.plainColor' ,
+        backgroundColor: '#D6DBDF',
+        borderRadius: '5px',
+        border: '1px solid',
+    }}>
+          Total de Compra: {accounting.formatMoney(total, '$', 2, '.', ',')}
       </Typography>
     </>
 

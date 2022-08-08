@@ -37,9 +37,15 @@ export const CartContextProvider = ({children}) => {
         cart.forEach((e) => cant += e.amount)
         return cant
     };
+    const removeItem = (id) => {
+        setCart( cart.filter((item) => item.id !== id));
+    };
 
+    const clear = () => {
+        setCart([]);
+    };
     return  (
-    <CartContext.Provider value={{cart, getQuantity,setCart , addItem, isInCart }}>
+    <CartContext.Provider value={{cart, getQuantity,setCart , addItem, isInCart, removeItem, clear }}>
         {children}
     </CartContext.Provider>
 )
