@@ -6,7 +6,6 @@ import { collection, query, getDocs } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
 
 
-
 function srcset(image, size, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -52,7 +51,9 @@ export default function Galery() {
             {...srcset(item.img, 121, item.rows, item.cols)}
             alt={item.title}
             loading="lazy"
+            
           />
+
         </ImageListItem>
       ))}
     </ImageList>
